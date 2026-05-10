@@ -1,0 +1,4 @@
+cat > app.yaml << 'EOF'
+runtime: python311
+entrypoint: gunicorn -b :$PORT main:app
+EOF
